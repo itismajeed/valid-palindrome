@@ -19,7 +19,7 @@ function isValidPalindrome(st) {
         return false;
     }
     for (let i = 0; i < x; i++) {
-        if (st[i] !== st[st.length - i - 1]) {
+        if (st[i].toLowerCase() !== st[st.length - i - 1].toLowerCase()) {
             return false;
         }
 
